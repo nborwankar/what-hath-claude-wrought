@@ -1,0 +1,14 @@
+<div class="featured-card">
+  <h3>
+    <a href="{{ project.repo }}">{{ project.name }}</a>
+    <span class="status-badge status-{{ project.status }}">{{ project.status }}</span>
+  </h3>
+  <p class="hook">{{ project.hook }}</p>
+  <dl class="details">
+    <dt>Domain insight</dt>
+    <dd>{{ project.domain }}</dd>
+    <dt>What got built</dt>
+    <dd>{{ project.built }}</dd>
+  </dl>
+  <p class="evidence">{{ project.evidence }}</p>
+</div>
