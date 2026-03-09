@@ -202,17 +202,31 @@ footer a {
   text-decoration: underline;
 }
 
-/* About page */
-.about h2 {
-  margin-top: 2rem;
-}
-
-.about blockquote {
+/* About section (inline on home page) */
+main > blockquote {
   border-left: 3px solid #ccc;
   margin: 1rem 0;
   padding: 0.5rem 1rem;
   color: #555;
   font-style: italic;
+}
+
+main > hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 2rem 0;
+}
+
+.about-links {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.about-links a {
+  color: #555;
 }
 
 /* Responsive */
