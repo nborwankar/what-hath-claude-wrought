@@ -41,7 +41,7 @@ Every project below was built with Claude Code as a pair programmer. Some were c
 {% endfor %}
 
 <div class="catalog-section">
-<h2>Also Shipped</h2>
+<h2>Also Working On</h2>
 <table class="catalog-table">
 <thead>
 <tr>
