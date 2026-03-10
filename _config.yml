@@ -2,7 +2,7 @@ title: "What Hath Claude Wrought"
 description: "A senior engineer's portfolio of Claude Code collaborations"
 url: "https://nborwankar.github.io"
 baseurl: "/what-hath-claude-wrought"
-tier_cutoff: 5
+tier_cutoff: 9
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
