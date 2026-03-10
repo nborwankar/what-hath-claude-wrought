@@ -32,7 +32,7 @@ Every project below was built with Claude Code as a pair programmer. Some were c
 
 ---
 
-{% assign sorted = site.data.projects | sort: "rank" %}
+{% assign sorted = site.data.projects %}
 {% for project in sorted %}
 {% assign rank_num = project.rank | plus: 0 %}
 {% if rank_num <= site.tier_cutoff %}
