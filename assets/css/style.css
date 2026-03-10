@@ -162,6 +162,16 @@ footer a {
   color: #1565c0;
 }
 
+.status-pre-release {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.status-early {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
 /* Also shipped catalog */
 .catalog-section h2 {
   font-size: 1.3rem;
