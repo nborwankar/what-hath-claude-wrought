@@ -30,6 +30,8 @@ The collaboration has a consistent pattern:
 
 Every project below was built with Claude Code as a pair programmer. Some were conceived and shipped in a single weekend. Others evolved over months of iterative sessions. Most of them represent ideas I'd carried for years that I can now put into practice bt some of them, like mcpmon, came out of an issue that needed a tool to fix.
 
+The [portfolio]({{ '/' | relative_url }}) showcases the range: from Riemannian geometry on Apple Silicon to MCP protocol monitoring to Vonnegut-inspired story generation. The common thread is depth — these aren't toy demos, they're real systems with real tests solving real problems.
+
 ---
 
 {% assign projects = site.data.projects %}
