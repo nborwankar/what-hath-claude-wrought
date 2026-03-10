@@ -32,10 +32,9 @@ Every project below was built with Claude Code as a pair programmer. Some were c
 
 ---
 
-{% assign sorted = site.data.projects %}
-{% for project in sorted %}
-{% assign rank_num = project.rank | plus: 0 %}
-{% if rank_num <= site.tier_cutoff %}
+{% assign projects = site.data.projects %}
+{% for project in projects %}
+{% if forloop.index <= site.tier_cutoff %}
 {% include featured-card.html project=project %}
 {% endif %}
 {% endfor %}
@@ -51,9 +50,8 @@ Every project below was built with Claude Code as a pair programmer. Some were c
 </tr>
 </thead>
 <tbody>
-{% for project in sorted %}
-{% assign rank_num = project.rank | plus: 0 %}
-{% if rank_num > site.tier_cutoff %}
+{% for project in projects %}
+{% if forloop.index > site.tier_cutoff %}
 {% include catalog-row.html project=project %}
 {% endif %}
 {% endfor %}

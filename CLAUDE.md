@@ -5,8 +5,9 @@ CSV-driven Jekyll portfolio site for GitHub Pages. Showcases Claude Code collabo
 
 ## Architecture
 - `_data/projects.csv` is the single source of truth for all project content
-- `_config.yml` has `tier_cutoff` — rows with rank <= cutoff are featured, rest are catalog
-- To reorder: edit rank column in CSV (open in Excel/Numbers), save, commit, push
+- `_config.yml` has `tier_cutoff` — first N rows are featured, rest are catalog
+- To reorder: move rows in CSV (open in Excel/Numbers), save, commit, push
+- Row order in CSV = display order on site. The rank column is ignored for ordering.
 - GitHub Pages auto-builds on push to main
 
 ## No conda env needed
