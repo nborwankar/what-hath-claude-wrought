@@ -14,7 +14,7 @@ O'Reilly author ([Vector Databases](https://github.com/nborwankar/VectorDatabase
 
 Creator of [LearnDataScience](https://github.com/nborwankar/LearnDataScience) (3,000 stars, 1,600 forks — hand-built in 2013 when there were no such things as agents).
 
-I have wide-scoped research ideas — hyperbolic embeddings for code search, neuro-symbolic query languages, Vonnegut's story shapes as generative constraints, geometric ananlysis of code hierarchies and the transition to industrial development of software that will emerge after this current phase of agentic development  — and for years I lacked the execution bandwidth to pursue them all.
+I have wide-scoped research ideas — hyperbolic embeddings for code search, neuro-symbolic query languages, Vonnegut's story shapes as generative constraints, geometric analysis of code hierarchies and the transition to industrial development of software that will emerge after this current phase of agentic development  — and for years I lacked the execution bandwidth to pursue them all.
 
 Claude Code changed the equation.
 
@@ -25,10 +25,10 @@ The cognitive boundary between us dissolves during deep work sessions. That's no
 The collaboration has a consistent pattern:
 
 - **I bring**: domain expertise, research hypotheses, architectural taste, quality standards, opinionatedness
-- **Claude brings**: implementation velocity, test coverage, systematic debugging, framework knowledge and just enough randomw behavior to keep things interesting
+- **Claude brings**: implementation velocity, test coverage, systematic debugging, framework knowledge and just enough random behavior to keep things interesting
 
 
-Every project below was built with Claude Code as a pair programmer. Some were conceived and shipped in a single weekend. Others evolved over months of iterative sessions. Most of them represent ideas I'd carried for years that I can now put into practice bt some of them, like mcpmon, came out of an issue that needed a tool to fix.
+Every project below was built with Claude Code as a pair programmer. Some were conceived and shipped in a single weekend. Others evolved over months of iterative sessions. Most of them represent ideas I'd carried for years that I can now put into practice but some of them, like mcpmon, came out of an issue that needed a tool to fix.
 
 The [portfolio]({{ '/' | relative_url }}) showcases the range: from Riemannian geometry on Apple Silicon to MCP protocol monitoring to Vonnegut-inspired story generation. The common thread is depth — these aren't toy demos, they're real systems with real tests solving real problems.
 
