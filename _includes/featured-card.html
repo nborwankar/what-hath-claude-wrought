@@ -10,5 +10,11 @@
     <dt>What got built</dt>
     <dd>{{ project.built }}</dd>
   </dl>
-  <p class="evidence">{{ project.evidence }}</p>
+  <p class="evidence">
+    {%- if project.commits != "" %}{{ project.commits }} commits{% endif -%}
+    {%- if project.tests != "" %}; {{ project.tests }} tests{% endif -%}
+    {%- if project.version != "" %}; {{ project.version }}{% endif -%}
+    {%- if project.last_active != "" %}; last active {{ project.last_active }}{% endif -%}
+    {%- if project.notes != "" %}; {{ project.notes }}{% endif -%}
+  </p>
 </div>

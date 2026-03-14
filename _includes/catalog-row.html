@@ -2,4 +2,9 @@
   <td><a href="{{ project.repo }}">{{ project.name }}</a></td>
   <td>{{ project.hook }}</td>
   <td><span class="status-badge status-{{ project.status }}">{{ project.status }}</span></td>
+  <td class="evidence-cell">
+    {%- if project.commits != "" %}{{ project.commits }} commits{% endif -%}
+    {%- if project.tests != "" %}; {{ project.tests }} tests{% endif -%}
+    {%- if project.version != "" %}; {{ project.version }}{% endif -%}
+  </td>
 </tr>
