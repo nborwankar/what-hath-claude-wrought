@@ -8,7 +8,7 @@ title: Home
   <p class="tagline">I'm Nitin Borwankar, a senior engineer who hasn't written a line of code in these projects — and has shipped more than ever.</p>
 </div>
 
-* Senior engineer with decades in databases, machine learning, and enterprise application development roles in QA, dev, technical management, architecture and product management. 
+* Senior engineer with decades in databases, some machine learning and enterprise application development roles in QA, dev, technical management, architecture and product management. 
 
 * O'Reilly author ([Vector Databases](https://github.com/nborwankar/VectorDatabasesBook)). 
 
