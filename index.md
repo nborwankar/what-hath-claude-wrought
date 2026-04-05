@@ -8,9 +8,9 @@ title: Home
   <p class="tagline">I'm Nitin Borwankar, a senior engineer who hasn't written a line of code in these projects — and has shipped more than ever.</p>
 </div>
 
-* Senior engineer with decades in databases, some machine learning and enterprise application development roles in QA, dev, technical management, architecture and product management. 
+* Decades in databases, some machine learning and enterprise application development roles in QA, dev, technical management, architecture and product management. 
 
-* O'Reilly author ([Vector Databases](https://github.com/nborwankar/VectorDatabasesBook)). 
+* O'Reilly author ([Vector Databases](https://github.com/nborwankar/VectorDatabaseBook)). 
 
 * Creator of [LearnDataScience](https://github.com/nborwankar/LearnDataScience) (3,000 stars, 1,600 forks — hand-built in 2013 when there were no such things as agents).
 
