@@ -31,6 +31,8 @@ Every project below was built with Claude Code as a pair programmer. Some were c
 
 The [portfolio]({{ '/' | relative_url }}) showcases the range: from Riemannian geometry on Apple Silicon to MCP protocol monitoring to Vonnegut-inspired story generation. The common thread is depth — these aren't toy demos, they're real systems with real tests solving real problems.
 
+**Want the whole workbench?** Browse the [full project catalog]({{ '/projects.html' | relative_url }}) — every public and in-progress project, sortable and searchable.
+
 ---
 
 {% assign projects = site.data.projects %}
@@ -61,4 +63,4 @@ The [portfolio]({{ '/' | relative_url }}) showcases the range: from Riemannian g
 </table>
 </div>
 
-**Links**: [GitHub](https://github.com/nborwankar) · [LearnDataScience](https://github.com/nborwankar/LearnDataScience) (3K stars) · [This site's source](https://github.com/nborwankar/what-hath-claude-wrought)
+**Links**: [Full project catalog]({{ '/projects.html' | relative_url }}) · [GitHub](https://github.com/nborwankar) · [LearnDataScience](https://github.com/nborwankar/LearnDataScience) (3K stars) · [This site's source](https://github.com/nborwankar/what-hath-claude-wrought)

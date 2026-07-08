@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Full Project Catalog — What Hath Claude Wrought</title>
+<style>
+  :root { --bg:#fff; --fg:#1a1a1a; --muted:#666; --line:#ddd; --accent:#0969da;
+           --badge-bg:#f1e8ff; --badge-fg:#6639ba; --row-hover:#f6f8fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#30363d;
+             --accent:#4493f8; --badge-bg:#2d2149; --badge-fg:#c297ff;
+             --row-hover:#161b22; } }
+  * { box-sizing:border-box; }
+  body { margin:0 auto; max-width:1100px; padding:2rem 1rem; background:var(--bg);
+         color:var(--fg); font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",
+         Helvetica,Arial,sans-serif; }
+  h1 { margin:0 0 .25rem; }
+  .sub { color:var(--muted); margin:0 0 1rem; }
+  .counts { color:var(--muted); margin:.5rem 0 1rem; }
+  input#q { width:100%; padding:.6rem .8rem; font-size:1rem; border:1px solid
+            var(--line); border-radius:6px; background:var(--bg); color:var(--fg);
+            margin-bottom:1rem; }
+  .tablewrap { overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; }
+  th, td { text-align:left; padding:.5rem .6rem; border-bottom:1px solid var(--line);
+           vertical-align:top; }
+  th { cursor:pointer; user-select:none; white-space:nowrap; position:sticky; top:0;
+       background:var(--bg); }
+  th .arrow { color:var(--muted); font-size:.8em; }
+  tr:hover td { background:var(--row-hover); }
+  td.name { white-space:nowrap; font-weight:600; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .badge { display:inline-block; font-size:.72em; font-weight:600; padding:.05rem .45rem;
+           border-radius:10px; background:var(--badge-bg); color:var(--badge-fg);
+           margin-left:.4rem; vertical-align:middle; }
+  td.state, td.date { white-space:nowrap; }
+  footer { margin-top:1.5rem; color:var(--muted); font-size:.85em; }
+</style>
+</head>
+<body>
+<h1>Full Project Catalog</h1>
+<p class="sub">Everything on the workbench — built with Claude Code.
+<a href="index.html">← back to the main site</a></p>
+<p class="counts">33 projects · 13 public · 20 private (linked — the link works when the repo is published)</p>
+<input id="q" type="search" placeholder="Filter by name, description, category, state…"
+       aria-label="Filter projects">
+<div class="tablewrap">
+<table id="cat">
+<thead><tr>
+  <th data-k="0">Project <span class="arrow"></span></th>
+  <th data-k="1">Description <span class="arrow"></span></th>
+  <th data-k="2">Category <span class="arrow"></span></th>
+  <th data-k="3">State <span class="arrow"></span></th>
+  <th data-k="4">Last active <span class="arrow"></span></th>
+</tr></thead>
+<tbody>
+<tr><td class="name"><a href="https://github.com/nborwankar/aibib">aibib</a></td><td>AI Bibliography Database — AIMA 4th-ed bibliography as JSON + SQLite (2,457 citations). Public, MIT.</td><td>Applications &amp; client-adjacent work</td><td class="state">shipped</td><td class="date">2025-11-21</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/metamutt">metamutt</a><span class="badge">private</span></td><td>Dog breathing analysis mobile app — React Native + Python ML backend (OpenCV pixel-intensity breathing detection).</td><td>Applications &amp; client-adjacent work</td><td class="state">wip</td><td class="date">2025-09-23</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/tandc">tandc</a></td><td>Terms &amp; Conditions risk analyzer — surfaces user risks in T&amp;C/privacy policies; Claude as analysis engine. Public, MIT, 126 tests.</td><td>Applications &amp; client-adjacent work</td><td class="state">shipped</td><td class="date">2026-05-22</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/flatoons">flatoons</a></td><td>Semantic Animation Framework — expressive 2D characters from semantic descriptions as resolution-independent SVG.</td><td>Art &amp; creative</td><td class="state">shipped</td><td class="date">2026-07-08</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/kurt">kurt</a></td><td>KurtShapes — generative visual storytelling from Kurt Vonnegut&#x27;s story-shapes insight (emotional arcs as fortune-vs-time); trifecta: KShapes → TinyStories → Flatoons. Public repo.</td><td>Art &amp; creative</td><td class="state">wip</td><td class="date">2026-03-13</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/AgentCommander">AgentCommander</a><span class="badge">private</span></td><td>Desktop app for orchestrating parallel Claude Code sessions (xterm.js + MCP WebSocket tap + SQLite WASM panels).</td><td>Claude/LLM developer tooling</td><td class="state">wip</td><td class="date">2026-05-29</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/aishell">aishell</a></td><td>Intelligent CLI: web search, intelligent shell, filesystem search, 5-provider LLM integration with MCP support. Public repo.</td><td>Claude/LLM developer tooling</td><td class="state">shipped</td><td class="date">2026-04-11</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/claudetools">claudetools</a></td><td>CLI tools for supercharging Claude Code workflows; monorepo (tx tmux wrapper, livemon, cswitch, ccli). Public repo.</td><td>Claude/LLM developer tooling</td><td class="state">wip</td><td class="date">2026-05-23</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/convaix">convaix</a></td><td>AI conversation exchange — store, search, share (SQLite + sqlite-vec, P2P exchange planned). Public, pip-installable.</td><td>Claude/LLM developer tooling</td><td class="state">wip</td><td class="date">2026-05-25</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/embedding_tools">embedding_tools</a></td><td>Backend-agnostic embedding utilities across NumPy/MLX/PyTorch. On PyPI (v0.3.0), public repo, MIT.</td><td>Claude/LLM developer tooling</td><td class="state">shipped</td><td class="date">2026-05-08</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/industrial-software">industrial-software</a><span class="badge">private</span></td><td>Monorepo: wasmkit (Python WASM learning toolkit) + Component Catalog (IC-industry practices applied to software components; Spark PoC).</td><td>Claude/LLM developer tooling</td><td class="state">stalled</td><td class="date">2026-04-20</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/mcpmon">mcpmon</a></td><td>MCP Traffic Observability for macOS — &quot;Wireshark for MCP&quot;; Electron; two-tier Ollama diagnosis. Public repo.</td><td>Claude/LLM developer tooling</td><td class="state">shipped</td><td class="date">2026-03-13</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/what-hath-claude-wrought">what-hath-claude-wrought</a></td><td>CSV-driven Jekyll portfolio site showcasing Claude Code collaboration projects. Public repo.</td><td>Claude/LLM developer tooling</td><td class="state">wip</td><td class="date">2026-07-08</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/embed_systems">embed_systems</a><span class="badge">private</span></td><td>Book 2: Building Embedding Systems — training, search, vector-DB infra, KB design, RAG.</td><td>Ebooks &amp; publishing (the monetization lane)</td><td class="state">stub</td><td class="date">2026-03-26</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/embed_toolkit">embed_toolkit</a><span class="badge">private</span></td><td>Book 1: &quot;Vector Embeddings: A practical approach&quot; (renamed from The Embeddings Toolkit) — every major embedding type, when to use each.</td><td>Ebooks &amp; publishing (the monetization lane)</td><td class="state">wip</td><td class="date">2026-04-11</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/qwen">qwen</a><span class="badge">private</span></td><td>Qwen 3.5 SAE Ebook (title from DONE.md; no README/CLAUDE.md yet).</td><td>Ebooks &amp; publishing (the monetization lane)</td><td class="state">stub</td><td class="date">2026-05-08</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/qwen-postgres">qwen-postgres</a><span class="badge">private</span></td><td>(no description in README/CLAUDE.md — docs/superpowers/ only)</td><td>Ebooks &amp; publishing (the monetization lane)</td><td class="state">stub</td><td class="date">2026-05-09</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/mislm">mislm</a><span class="badge">private</span></td><td>Book 3: Mechanistic Interpretability for SLMs — hands-on MI using GuppyLM (8.7M-param model) on a laptop.</td><td>Ebooks &amp; publishing (the monetization lane)</td><td class="state">wip</td><td class="date">2026-05-09</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/polos">polos</a><span class="badge">private</span></td><td>Hands-on ebook teaching the polos agent runtime via all 22 official examples → unified library + CLI.</td><td>Ebooks &amp; publishing (the monetization lane)</td><td class="state">complete-draft</td><td class="date">2026-05-03</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/VectorDatabaseBook">VectorDatabasesBook</a></td><td>Working area for &quot;Vector Databases: A Practical Introduction&quot; (O&#x27;Reilly) — chapter code (ch4–ch8), extraction tooling.</td><td>Ebooks &amp; publishing (the monetization lane)</td><td class="state">**shipped**</td><td class="date"></td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/pluggable_worlds">pluggable_worlds</a><span class="badge">private</span></td><td>v1: &quot;pick an animal, pick a personality, train a model in 5 minutes, then run MI experiments.&quot;</td><td>Mechanistic interpretability cluster</td><td class="state">obsolete-ish</td><td class="date">2026-04-25</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/pluggable_worlds_v2">pluggable_worlds_v2</a><span class="badge">private</span></td><td>Pluggable-world template training tiny LMs that generate correct conversations, LLM-as-judge scored, wired into Evo. Phase 1 of a three-phase program (Phase 2 = Evo search for MI-steerable activations).</td><td>Mechanistic interpretability cluster</td><td class="state">wip</td><td class="date">2026-06-12</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/TgLM">TgLM</a><span class="badge">private</span></td><td>Trains tiny GPT-2-style LMs on synthetic Tamagotchi conversations to study training dynamics and feature geometry (probes, grokking signatures, superposition).</td><td>Mechanistic interpretability cluster</td><td class="state">stalled</td><td class="date">2026-04-24</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/MI">MI</a><span class="badge">private</span></td><td>Mechanistic-interpretability research on Qwen3.5-2B with Qwen-Scope SAEs; PostgreSQL + pgvector relational steering ledger.</td><td>Mechanistic interpretability cluster</td><td class="state">stalled</td><td class="date">2026-05-10</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/vql">vql</a><span class="badge">private</span></td><td>A Postgres extension that makes Riemannian geometry native to the database — VQL as typed geometric objects (pgvector + MLX + mlx-manopt).</td><td>Research spine — code intelligence &amp; hyperbolic geometry</td><td class="state">wip</td><td class="date">2026-04-16</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/mlx-hyperbolic">mlx-hyperbolic</a></td><td>Fast hyperbolic NN primitives on Apple Silicon; Poincaré + Lorentz; &quot;122× speedup over PyManopt, 2.2× over geoopt+MPS&quot;. Public repo.</td><td>Research spine — code intelligence &amp; hyperbolic geometry</td><td class="state">shipped</td><td class="date">2025-12-31</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/n2">n2</a><span class="badge">private</span></td><td>Multi-Modal Code Search — hierarchical navigation + semantic embeddings + analytics in a unified platform; consolidates 15+ research projects.</td><td>Research spine — code intelligence &amp; hyperbolic geometry</td><td class="state">wip</td><td class="date">2026-03-26</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/code_embeddings">code_embeddings</a><span class="badge">private</span></td><td>Comparing Matryoshka Representation Learning and Hyperbolic Embeddings on code structure (Apache Spark).</td><td>Research spine — code intelligence &amp; hyperbolic geometry</td><td class="state">active</td><td class="date">2026-06-12</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/code_embeddings_20">code_embeddings_20</a><span class="badge">private</span></td><td>Generalizes the hyperbolic code-embedding methodology to 20 Apache JVM projects.</td><td>Research spine — code intelligence &amp; hyperbolic geometry</td><td class="state">active</td><td class="date">2026-07-07</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/geometric_analysis">geometric_analysis</a><span class="badge">private</span></td><td>Analyzes Apache Spark&#x27;s package architecture using geometric/topological methods to identify refactoring targets.</td><td>Research spine — code intelligence &amp; hyperbolic geometry</td><td class="state">stalled</td><td class="date">2026-02-06</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/hypHNSW">hypHNSW</a><span class="badge">private</span></td><td>Hyperbolic implementation of HNSW for nearest-neighbor search on tree-structured data (Poincaré disk).</td><td>Research spine — code intelligence &amp; hyperbolic geometry</td><td class="state">complete</td><td class="date">2026-01-12</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/mlx-manopt">mlx-manopt</a></td><td>MLX-native port of PyManopt — full API parity: 15 manifolds, 5 optimizers, identical signatures. Public at nborwankar/mlx-manopt.</td><td>Research spine — code intelligence &amp; hyperbolic geometry</td><td class="state">active</td><td class="date">2026-06-16</td></tr>
+<tr><td class="name"><a href="https://github.com/nborwankar/mlx_hyperbolic">mlx_hyperbolic</a><span class="badge">private</span></td><td>Metal-TMU LUT acceleration of transcendentals for hyperbolic ops (1.5–1.7× on exp_map_zero).</td><td>Research spine — code intelligence &amp; hyperbolic geometry</td><td class="state">complete</td><td class="date">2025-12-13</td></tr>
+</tbody>
+</table>
+</div>
+<footer>Generated 2026-07-08 · maintained as part of the portfolio refresh ·
+private repos are linked so the links light up if they are ever published.</footer>
+<script>
+(function () {
+  var tb = document.querySelector('#cat tbody'), q = document.getElementById('q');
+  q.addEventListener('input', function () {
+    var t = q.value.toLowerCase();
+    Array.prototype.forEach.call(tb.rows, function (r) {
+      r.style.display = r.textContent.toLowerCase().indexOf(t) > -1 ? '' : 'none';
+    });
+  });
+  var dir = {};
+  document.querySelectorAll('#cat th').forEach(function (th) {
+    th.addEventListener('click', function () {
+      var k = +th.dataset.k; dir[k] = -(dir[k] || -1);
+      var rows = Array.prototype.slice.call(tb.rows);
+      rows.sort(function (a, b) {
+        return dir[k] * a.cells[k].textContent.trim()
+          .localeCompare(b.cells[k].textContent.trim(), undefined, {numeric: true});
+      });
+      rows.forEach(function (r) { tb.appendChild(r); });
+      document.querySelectorAll('#cat th .arrow').forEach(function (s) { s.textContent = ''; });
+      th.querySelector('.arrow').textContent = dir[k] > 0 ? '▲' : '▼';
+    });
+  });
+})();
+</script>
+</body>
+</html>
